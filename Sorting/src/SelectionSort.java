@@ -17,13 +17,17 @@ public class SelectionSort {
 					minimum = j;
 				}
 			}
-			int temp = arr[i];
-			arr[i] = arr[minimum];
-			arr[minimum] = temp;
+			swap(arr, i,minimum);
+			
 		}
 		display(arr);
 	}
 	
+	private void swap(int arr[], int x, int y) {
+		int temp = arr[x];
+		arr[x] = arr[y];
+		arr[y] = temp;
+	}
 	private void display(int arr[]) { 
 		for(int count = 0; count < arr.length ; count++) {
 			System.out.print(arr[count] +"\t");
