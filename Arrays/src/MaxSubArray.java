@@ -1,6 +1,11 @@
 
 public class MaxSubArray {
 
+	/* Given an integer array nums, find the contiguous subarray 
+	 (containing at least one number) which has the largest sum
+	 
+	 */
+
 	public static void main(String args[]) {
 		MaxSubArray maxSubArray = new MaxSubArray();
 		int arr[] = {-2,-3,-4,-1,-5};
